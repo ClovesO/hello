@@ -5,28 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <title>Hello</title>
-    <script>
-        function hello(){
-            alert('Hello World!');
-            console.log('Hello World! Console');
-        }
-        function somar(){
-            var primeiro = document.getElementById('primeiro').value;
-            var segundo = document.getElementById('segundo').value;
-            var resultado = parseInt(primeiro) + parseInt(segundo);
-            alert('Resultado: ' + resultado);
-        }
-    </script>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <h2>Olá Mundo!</h2>
-    <p>Este é um parágrafo.</p>
-    <form action="">
-        <input type="text" name="primeiro" id="primeiro">
-        <input type="text" name="segundo" id="segundo">
-    </form>
-    <button onclick="somar();">Somar</button>
-    <!-- <button onmouseover="hello();">Btn 2</button> -->
+    <div>
+        <h1>Calcular</h1>
+    </div>
+
+    <div>
+        <h2>Soma</h2>
+        <p>Informe os valores:</p>
+        <!-- <h1>Hello World!</h1>
+        <h2>Olá Mundo!</h2>
+        <p>Este é um parágrafo.</p> -->
+        <form action="">
+            <input type="text" name="primeiro" id="primeiro">
+            <input type="text" name="segundo" id="segundo">
+            <input type="text" name="resultado" id="resultado" readonly>
+        </form>
+        <!-- <button onclick="somar();">Somar</button> -->
+        <!-- <button onmouseover="hello();">Btn 2</button> -->
+        </div>
+        <div>
+            <button onclick="somar();">Somar</button>
+            
+        </div>        
+        <div>
+            <button onclick="subt();">Subtrair</button>
+        </div>
+        <div>
+            <button onclick="mult();">Multiplicar</button>
+        </div>
+        <div>
+            <button onclick="dividir();">Dividir</button>
+        </div>
+        <div>
+            <button onclick="modulo();">Módulo</button>
+        </div>
+        <div>
+            <button onclick="potencia();">Potência</button>
+        </div>
+        <div>
+            <button onclick="raiz();">Raiz Quadrada</button>
+        </div>                
+    </div>
+
+    <script src="./scripts/scripts.js"></script>    
 </body>
 </html>
